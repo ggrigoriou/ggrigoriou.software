@@ -1,0 +1,65 @@
+/* Submit Page CSS */
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    overflow-x: hidden;
+    color: #11101D;
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa";
+}
+  a {
+    text-decoration: none;
+  }
+  p {
+    line-height: 25px;
+  }
+
+.text  {
+    padding: 50px;
+  }
+  .text h4{
+    margin-top: -20px;
+  }
+  .text #backbtn {
+    padding:10px 20px; 
+    background-color:#11101D; 
+    color: #fff; 
+    border-radius: 5px; 
+    text-decoration: none;
+  }
+  .rating-header {
+    height: 550px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/ONIRAMA2021.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    color: #fff;
+  }
+.rating-header table {
+    padding: 150px;
+    width: 80%;
+  }
+.rating-header #image {
+    width: 30%;
+    padding-right: 35px;
+  }
+  
+.rating-header .album-title{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: -10px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 35px;
+  }
+.rating-header .new-release {
+    font-size: 25px;
+  }
+.rating-header td {
+    vertical-align: top;
+  }
+.rating-header p{
+    font-size: 18px;
+  }

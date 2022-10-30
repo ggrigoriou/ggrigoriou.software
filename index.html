@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+    <title>Onirama</title>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <div class="icon"><i class='fas fa-crown'></i></div>
+        <div class="logo_name">ONIRAMA</div>
+        <i class='fas fa-bars' id="btn" ></i>
+    </div>
+    <ul class="nav-list" id="nav">
+      <li>
+        <a href="about.html" target="display_section">
+          <i class="fas fa-user-alt"></i>
+          <span class="links_name">Πληροφορίες</span>
+        </a>
+         <span class="tooltip">Πληροφορίες</span>
+      </li>
+     <li>
+       <a href="rating.html" target="display_section">
+        <i class="fas fa-star"></i>
+         <span class="links_name">Αξιολόγηση</span>
+       </a>
+       <span class="tooltip">Αξιολόγηση</span>
+     </li>
+     <li>
+       <a href="contest.html" target="display_section">
+        <i class="fas fa-medal"></i>
+         <span class="links_name">Διαγωνισμός</span>
+       </a>
+       <span class="tooltip">Διαγωνισμός</span>
+     </li>
+    </ul>
+  </div> 
+  <iframe src="about.html" name="display_section" class="home-section">
+    <p>Ο φυλλομετρητής σας δεν υποστηρίζει πλαίσια</p>
+   </iframe>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+    document.getElementById("btn").className = "fas fa-times";
+    document.getElementById("nav").style.marginTop="20px";
+   }else {
+    document.getElementById("btn").className = "fas fa-bars";
+    document.getElementById("nav").style.marginTop="150px";
+   }
+  }
+  </script>
+</body>
+</html>

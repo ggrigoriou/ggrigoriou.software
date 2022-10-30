@@ -1,0 +1,154 @@
+/* Rating Page CSS */
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    overflow-x: hidden;
+    color: #11101D;
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa";
+}
+  a {
+    text-decoration: none;
+  }
+  p {
+    line-height: 25px;
+  }
+.rating-content h1 {
+    text-align: center;
+    padding-top: 25px;
+  }
+.rating-header {
+    height: 550px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/ONIRAMA2021.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    color: #fff;
+  }
+.rating-header table {
+    padding: 150px;
+    width: 80%;
+  }
+.rating-header #image {
+    width: 30%;
+    padding-right: 35px;
+  }
+  
+.rating-header .album-title{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: -10px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 35px;
+  }
+.rating-header .new-release {
+    font-size: 25px;
+    line-height: 30px;
+  }
+.rating-header td {
+    vertical-align: top;
+  }
+.rating-header p{
+    font-size: 18px;
+  }
+  
+.rating-content .formbody {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 60%;
+    margin: 0 auto;
+  }
+.rating-content input.flieds , .rating-content select, .rating-content textarea {
+  width: 100%;
+  padding: 12px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 3px solid #11101D;
+  margin-top: 6px;
+  margin-bottom: 25px;
+  background-color: transparent;
+  color: #11101D;
+  font-size: 16px;
+  resize: none;
+}
+  
+.rating-content input.flieds:focus, .rating-content textarea:focus{
+  outline: none;
+}
+  
+  
+.rating-content input[type=submit] {
+  background-color: #11101D;
+  color: #fff ;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  width: 50%;
+}
+  
+.rating-content .formbody label {
+  color: #11101D;
+  font-size: 20px;
+  font-weight: bold;
+}
+  
+.rating-content .star-rating {
+  margin: 25px 0 0px;
+   font-size: 0;
+   white-space: nowrap;
+   display: inline-block;
+   width: 175px;
+   height: 35px;
+   overflow: hidden;
+   position: relative;
+   background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+   background-size: contain;
+}
+  
+.rating-content .star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  z-index: 1;
+  content: "\f005";
+  background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+  background-size: contain;
+}
+  
+.rating-content .star-rating input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  display: inline-block;
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+  
+  
+.rating-content .star-rating input:hover + i, .rating-content .star-rating input:checked + i {
+  opacity: 1;
+}
+.rating-content .star-rating i ~ i {
+  width: 40%;
+}
+.rating-content .star-rating i ~ i ~ i {
+  width: 60%;
+}
+.rating-content .star-rating i ~ i ~ i ~ i {
+  width: 80%;
+}
+.rating-content .star-rating i ~ i ~ i ~ i ~ i {
+  width: 100%;
+}

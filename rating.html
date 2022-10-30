@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="rating-style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+   </head>
+<body>
+  <div class="rating-header">
+    <table class="display-album">
+      <tr>
+        <td id="image"> 
+          <a href="https://open.spotify.com/album/7rEcSbHJu1nlLZejCUVSrS?si=WWLswLFYTfe9DGP1F1Qmkg" target="_parent"><img src="images/anthologio.jpeg"></a>
+        </td>
+        <td>
+          <p class="new-release">Ο νέος δίσκος των ONIRAMA κυκλοφόρησε!</p>
+          <a href="https://open.spotify.com/album/7rEcSbHJu1nlLZejCUVSrS?si=WWLswLFYTfe9DGP1F1Qmkg" target="_parent"><p class="album-title">Ανθολόγιο για μικρούς και μεγάλους</p></a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="rating-content">
+    <h1>Η άποψη σου μετράει!</h1>
+    <center><p>Άκου το νέο μας album "Ανθολόγιο για μικρούς και μεγάλους" και γράψε την γνώμη σου στην παρακάτω φόρμα.</p></center>
+    
+    <div class="formbody">
+			<form id="rating-table" method="post" action="mydata.php">
+				<label for="diskname">1. Όνομα δίσκου</label>
+				<input type="text" id="diskname" name="diskname" class="flieds"  placeholder="Το όνομα του δίσκου.." required><br><br>
+						
+        <label for="releaseyear">2. Χρονολογία κυκλοφορίας</label><br><br>
+        <input type="number" id="releaseyear" name="releaseyear" class="flieds" min="2005" max="2021" step="1" value="2021" /><br><br>
+
+				<label for="name">3. Ψευδώνυμο</label>
+				<input type="text" id="name" name="name" class="flieds"  placeholder="Το ψευδώνυμο σου.." required><br><br>
+
+        <label>4. Βαθμός αξιολόγησης</label><br>
+  
+          <span class="star-rating">
+            <input type="radio" name="rating" value="1" checked><i></i>
+            <input type="radio" name="rating" value="2"><i></i>
+            <input type="radio" name="rating" value="3"><i></i>
+            <input type="radio" name="rating" value="4"><i></i>
+            <input type="radio" name="rating" value="5"><i></i>
+          </span><br><br>
+				
+				<label for="rating-text">5. Κριτική</label>
+				<textarea id="rating-text" name="rating-text" class="flieds" minlength="50" rows="3" placeholder="Η κριτική σου.." required></textarea><br><br>
+        
+        <center><input type="submit" value="Μοιράσου την γνώμη σου"></center>
+		  </form>
+    </div>
+
+
+</body>
+</html>
