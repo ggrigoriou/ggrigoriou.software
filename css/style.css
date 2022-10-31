@@ -10,9 +10,7 @@
     .d-flex{
         display: block !important;
     }
-    #spinner .d-flex{
-        display: flex !important;
-    }
+
 }
 
 
