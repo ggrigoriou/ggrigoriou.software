@@ -143,16 +143,12 @@
     }
 }
 
-
-
-
-
 @media only screen and (max-width: 1024px){
     #home {
-        height: 70vh;
+        height: 80vh;
     }
     #home .col-lg-6.pt-lg-0{
-        padding-top: 20vh !important;
+        padding-top: 25vh !important;
         z-index: 1;
     }
     #home .img-fluid {
