@@ -138,13 +138,14 @@
     #home .img-fluid {
         top: 0px;
     }
+    #home .col-lg-6.pt-lg-0{
+        padding-top: 35vh !important;
+        z-index: 1;
+    }
 }
 
 
-#home .col-lg-6.pt-lg-0{
-    padding-top: 35vh;
-    z-index: 1;
-}
+
 
 
 @media only screen and (max-width: 1024px){
@@ -152,7 +153,8 @@
         height: 70vh;
     }
     #home .col-lg-6.pt-lg-0{
-        padding-top: 20vh;
+        padding-top: 20vh !important;
+        z-index: 1;
     }
     #home .img-fluid {
         bottom: 0px;
