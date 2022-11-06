@@ -1,6 +1,5 @@
 (function ($) {
     "use strict";
-
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -14,9 +13,6 @@
     
     // Initiate the wowjs
     new WOW().init();
-
-
-
     // Smooth scrolling on links
     $("a").on('click', function (event) {
         if (this.hash !== "") {
@@ -25,11 +21,15 @@
             $('html, body').animate({
                 scrollTop: $(this.hash).offset().top - 45
             }, 1500, 'easeInOutExpo');
+
+            if ($(this).parents('.navbar-nav').length) {
+                $('.navbar-nav .active').removeClass('active');
+                $(this).closest('a').addClass('active');
+            }
         }
     });
-    
-    
 
+    
     // Typed Initiate
     if ($('.typed-text-output').length == 1) {
         var typed_strings = $('.typed-text').text();
@@ -41,23 +41,17 @@
             loop: true
         });
     }
-
-
     // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 2000
     });
-
-
     // Skills
     $('.skill').waypoint(function () {
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, {offset: '80%'});
-
-
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
@@ -66,11 +60,8 @@
     $('#portfolio-flters li').on('click', function () {
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
-
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-
-
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
@@ -79,7 +70,5 @@
         dots: true,
         loop: true,
     });
-
     
 })(jQuery);
-
